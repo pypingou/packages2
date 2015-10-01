@@ -50,6 +50,10 @@ APP.logger.addHandler(STDERR_LOG)
 
 LOG = APP.logger
 
+
+import packages.api
+
+
 @APP.route('/')
 def index():
     ''' Display the index package DB page. '''

@@ -123,6 +123,27 @@ h3 {
     height: 16px;
     width: 16px;
 }
+#package-info-bar .package-dist {
+    color: #555;
+    display: inline;
+    font-size: 9pt;
+    font-style: italic;
+    margin-top: -0.2em;
+}
+#package-info-bar .package-owner {
+    display: inline;
+    margin-right: 4px;
+}
+
+#package-info-bar a.package-owner:link {
+    color: #3c6eb4;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#package-info-bar .package-owner {
+    display: inline;
+    margin-right: 4px;
+}
 img {
     color: transparent;
     font-size: 0;

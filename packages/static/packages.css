@@ -1,0 +1,129 @@
+body, p, a, li, div, input, button {
+    font-family: Cantarell,sans-serif;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-sm {
+    height: 40px;
+    min-height: 40px;
+}
+.navbar-sm .navbar-brand {
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 12px;
+}
+.navbar-sm .navbar-nav > li > a {
+    line-height: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+h1.project-name {
+    margin-bottom: 20px;
+}
+.alert:first-child {
+    margin-top: 20px;
+}
+.alert ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+#main-bar {
+    background-image: url("header_background.png");
+    background-repeat: repeat-x;
+    color: white;
+    height: 75px;
+}
+#main-bar .container {
+    padding-top: 4px;
+}
+#login-menu {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#login-menu a {
+    color: white;
+}
+#logo {
+    height: 58px;
+    position: relative;
+    top: 6px;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+h3 {
+    color: #666;
+    line-height: 100%;
+    margin-top: 10px;
+}
+#content h2.package-header {
+    border-bottom: 1px solid #c4c4c4;
+}
+#content h2 span.package-name {
+    color: #777;
+    text-transform: capitalize;
+}
+#content h2 span.package-summary {
+    color: #aaa;
+    font-size: 70%;
+    font-style: italic;
+    font-weight: normal;
+}
+#package-overview {
+    color: #444;
+    font-size: 0.85em;
+}
+#package-overview h3 {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 0.85em;
+    margin-top: 1em;
+}
+#package-overview h4 {
+    color: #999;
+    font-size: 0.85em;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+#package-info-bar .build div {
+    font-size: 11pt;
+}
+#package-info-bar .package-name, #package-info-bar .owner, #package-info-bar .package-tree, #package-info-bar .other-app {
+    margin-bottom: 1.5em;
+}
+#package-info-bar .package-name, #package-info-bar .package-owner, #package-info-bar .other-app {
+    color: #3c6eb4;
+    font-size: 13pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+#package-info-bar ul {
+    list-style: outside none none;
+    margin-left: 0.2em;
+}
+#package-info-bar ul ul {
+    list-style: outside url("list_tree_marker.png") square;
+    margin-left: 1.3em;
+}
+#package-info-bar .other-app img {
+    height: 16px;
+    width: 16px;
+}
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+}
+#package-header h2 {
+    color: #444;
+    font-size: 24pt;
+}
+#package-header em {
+    color: #666;
+}

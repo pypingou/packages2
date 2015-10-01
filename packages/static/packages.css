@@ -1,13 +1,25 @@
 body, p, a, li, div, input, button {
     font-family: Cantarell,sans-serif;
 }
+body {
+    color: black;
+    font-size: 12pt;
+}
+h3 {
+    font-size: 21px;
+}
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
     border: 0 none;
     font-size: 100%;
     margin: 0;
     padding: 0;
 }
-
+a, a:visited, a:active, a:link {
+    color: #3c6eb4;
+}
+b, strong {
+    font-weight: bold;
+}
 .navbar-sm {
     height: 40px;
     min-height: 40px;
@@ -62,6 +74,14 @@ h3 {
     line-height: 100%;
     margin-top: 10px;
 }
+.container_24 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+#tab-container {
+  width: 750px;
+}
 #content h2.package-header {
     border-bottom: 1px solid #c4c4c4;
 }
@@ -78,18 +98,6 @@ h3 {
 #package-overview {
     color: #444;
     font-size: 0.85em;
-}
-#package-overview h3 {
-    color: #666;
-    font-size: 1em;
-    margin-bottom: 0.85em;
-    margin-top: 1em;
-}
-#package-overview h4 {
-    color: #999;
-    font-size: 0.85em;
-    margin-bottom: 0;
-    margin-top: 10px;
 }
 #package-info-bar .build div {
     font-size: 11pt;
@@ -127,3 +135,36 @@ img {
 #package-header em {
     color: #666;
 }
+#package-overview h3 {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 0.85em;
+    margin-top: 1em;
+}
+#package-overview h4 {
+    color: #999;
+    font-size: 0.85em;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+/* history cards */
+.message-card {
+  min-height: 52px;
+}
+.history-cards img {
+  height: 25px;
+  width: 25px;
+  margin: 2px auto;
+}
+.history-cards p {
+  display: inline;
+}
+.history-cards .datetime {
+  margin-left: 450px;
+  color: #999;
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+

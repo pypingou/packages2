@@ -48,8 +48,8 @@
   </nav>
 
   <!-- Side bar -->
-  <div id="container" class="col-md-2 col-sm-2 col-xs-2">
-    <div class="container_24" id="package-details">
+  <div class="container_24" id="package-details">
+    <div id="container" class="col-md-2 col-sm-2 col-xs-2">
       <div class="grid_5" id="package-info-bar">
           <!-- {{ package.icon_url }}"-->
         <img src="https://apps.fedoraproject.org/packages/images/icons/package_128x128.png"
@@ -138,64 +138,66 @@
        </div>
        <div class="clear"></div>
     </div>
-  </div>
-  <!-- Main content -->
-  <div id="tab-container" class="col-md-10 col-sm-10 col-xs-10">
-    <div id="package-header">
-     <h2>python</h2>
-     <div><em>An interpreted, interactive, object-oriented programming language</em></div>
-   </div>
-    <!-- Menu -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+      <!-- Main content -->
+      <div id="tab-container" class="col-md-10 col-sm-10 col-xs-10">
+        <div id="package-header">
+         <h2>python</h2>
+         <div><em>An interpreted, interactive, object-oriented programming language</em></div>
+       </div>
+        <!-- Menu -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Overview</a></li>
-            <li><a href="#">Builds</a></li>
-            <li><a href="#">Updates</a></li>
-            <li><a href="#">Bugs</a></li>
-            <li><a href="#">Contents</a></li>
-            <li><a href="#">Changelog</a></li>
-            <li><a href="#">Sources</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Overview</a></li>
+                <li><a href="#">Builds</a></li>
+                <li><a href="#">Updates</a></li>
+                <li><a href="#">Bugs</a></li>
+                <li><a href="#">Contents</a></li>
+                <li><a href="#">Changelog</a></li>
+                <li><a href="#">Sources</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
 
-    <div id="package-overview">
-      <div class="description-block">
-        <h3>Description</h3>
-        <p class="package-description">{{ package.description }}</p>
-      </div>
-      <div class="active-release-block">
-        <h3>Active Releases Overview</h3>
-          <div>${w.children[0].display(package_name=w.package_info['name'])}</div>
-      </div>
-      {% if package.homepage %}
-      <div class="upstream-block">
-        <h3>Upstream Summary</h3>
-        <div class="homepage-block">
-          <h4>Project Homepage</h4>
-          <a href="{{ package.homepage }}">{{ package.homepage }}</a>
+        <div id="package-overview">
+          <div class="description-block">
+            <h3>Description</h3>
+            <p class="package-description">{{ package.description }}</p>
           </div>
-      </div>
-      {% endif %}
-      <div class="history-block">
-        <h3>History</h3>
-        <div class="history-cards" id="history-cards">
+          <div class="active-release-block">
+            <h3>Active Releases Overview</h3>
+              <div>${w.children[0].display(package_name=w.package_info['name'])}</div>
+          </div>
+          {% if package.homepage %}
+          <div class="upstream-block">
+            <h3>Upstream Summary</h3>
+            <div class="homepage-block">
+              <h4>Project Homepage</h4>
+              <a href="{{ package.homepage }}">{{ package.homepage }}</a>
+              </div>
+          </div>
+          {% endif %}
+          <div class="history-block">
+            <h3>History</h3>
+            <div class="history-cards" id="history-cards">
+            </div>
+          </div>
         </div>
-      </div>
+
+      </div><!-- /.tab-container -->
     </div>
 
   </div><!-- /.tab-container -->

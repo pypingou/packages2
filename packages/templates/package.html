@@ -200,10 +200,16 @@
       </div><!-- /.tab-container -->
     </div>
 
-  </div><!-- /.tab-container -->
+  <script src="/static/packages.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+        package_history('{{ package.name }}');
+    });
+  </script>
+
 
   <!-- FEDORA MENU -->
-
   <script src="https://apps.fedoraproject.org/fedmenu//js/fedora-libravatar.js"></script>
   <script src="https://apps.fedoraproject.org/fedmenu//js/fedmenu.js"></script>
   <script>
